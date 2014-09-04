@@ -12,6 +12,7 @@ class Bootstrap {
         if(empty($url[0])){
             require 'Controller/index.php';
             $controller = new Index();
+            $controller->index();
             return false;
         }
         
@@ -31,6 +32,8 @@ class Bootstrap {
         } else {
             if (isset($url[1])) {
                 $controller->{$url[1]}();
+            }  else {
+                $controller->index();
             }
         }
     }

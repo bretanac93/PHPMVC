@@ -11,9 +11,9 @@
             Header
             <br />
             <ul>
-                <li><a href="index">Index</a></li>
-                <li><a href="Help">About</a></li>
-                <li><a href="login">Login</a></li>
+                <li><a href="<?php echo URL;?>index">Index</a></li>
+                <li><a href="<?php echo URL;?>Help">About</a></li>
+                <li><a href="<?php echo URL;?>login">Login</a></li>
             </ul>
         </header>
         <div id="content">
