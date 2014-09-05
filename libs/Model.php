@@ -2,7 +2,7 @@
 class Model {
 
     function __construct() {
-        //And all the fucking database
+        $this->db = new Database();
     }
 
 }
